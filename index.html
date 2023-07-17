@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" src="style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form name="new-media" id="new-media">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+        <label for="year">Year Published</label>
+        <input type="number" id="year" name="year" required>
+        <fieldset>
+            <legend>Select media type</legend>
+            <div>
+                <input type="radio" id="video-game" name="media" value="video-game" required>
+                <label for="video-game">Video Game</label>
+            </div>
+            <div>
+                <input type="radio" id="movie" name="media" value="movie" >
+                <label for="video-game">Movie</label>
+            </div>
+            <div>
+                <input type="radio" id="comic" name="media" value="comic" >
+                <label for="video-game">Comic</label>
+            </div>
+            <div>
+                <input type="radio" id="album" name="media" value="album" >
+                <label for="video-game">Album</label>
+            </div>
+        </fieldset>
+        <label for="rating"></label>
+        <input type="range" name="rating" id = "rating" min="1" max="10" value="3">
+    </form>
+
+    <script src="code.js"></script>
+</body>
+</html>
