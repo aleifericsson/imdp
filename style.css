@@ -1,16 +1,22 @@
 form {
     width: 300px;
     overflow:auto;
-    border: 2px solid gray;
+    border: 2px solid darkgray;
     background-color: white;
     display:flex;
     align-items: left;
     flex-direction: column;  
     padding:10px;
     gap: 5px;
+    transition:cubic-bezier(1, 0, 0, 1);
+    position: absolute;
+    box-shadow: 0px 0px 10px gray;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
-#new-media{
+.offscreen{
     transform: translateY(-100vh);
 }
 
