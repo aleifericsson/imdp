@@ -1,0 +1,20 @@
+form {
+    width: 300px;
+    overflow:auto;
+    border: 2px solid gray;
+    background-color: white;
+    display:flex;
+    align-items: left;
+    flex-direction: column;  
+    padding:10px;
+    gap: 5px;
+}
+
+#new-media{
+    transform: translateY(-100vh);
+}
+
+form > div{
+    display:flex;
+    justify-content: space-between;
+}
