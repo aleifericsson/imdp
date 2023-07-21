@@ -4,14 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>IMDP</title>
 </head>
 <body>
     <button id = "new-media-btn">New Media</button>
+    <!--
+        SAMPLE MEDIA (inside media-disp):
+        <li class = "media-card">
+            <div class = "card-name">Sonic Adventure 2: Battle Collector's Edition</div>
+            <div class = "card-year">1998</div>
+            <div class = "card-creator">Sonic Team<div>
+            <div class = "card-type">Video Game</div>
+            <div class = "card-rating">★★★⯪☆</div>
+        </li>
+    -->
+    <ul class = "media-disp">
+        
+    </ul>
     <form name="new-media" id="new-media" class="offscreen">
         <div>
         <label for="name">Name</label>
         <input type="text" id="name" name="name" required>
+        </div>
+        <div>
+            <label for="creator">Creator</label>
+            <input type="text" id="creator" name="creator" required>
         </div>
         <div>
         <label for="year">Year Pub.</label>
@@ -20,25 +37,25 @@
         <fieldset>
             <legend>Select media type</legend>
             <div>
-                <input type="radio" id="video-game" name="media" value="video-game" required>
+                <input type="radio" id="video-game" name="media" value="Video Game" required>
                 <label for="video-game">Video Game</label>
             </div>
             <div>
-                <input type="radio" id="movie" name="media" value="movie" >
+                <input type="radio" id="movie" name="media" value="Movie" >
                 <label for="video-game">Movie</label>
             </div>
             <div>
-                <input type="radio" id="comic" name="media" value="comic" >
+                <input type="radio" id="comic" name="media" value="Comic" >
                 <label for="video-game">Comic</label>
             </div>
             <div>
-                <input type="radio" id="album" name="media" value="album" >
+                <input type="radio" id="album" name="media" value="Album" >
                 <label for="video-game">Album</label>
             </div>
         </fieldset>
         <div>
         <label for="rating">Rating:</label>
-        <input type="range" name="rating" id = "rating" min="1" max="10" value="5">
+        <input type="range" name="rating" id = "rating" min="0" max="10" value="7">
     </div>
     <button id = "submit" type="submit">Add Media</button>
     </form>

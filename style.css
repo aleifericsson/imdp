@@ -24,3 +24,42 @@ form > div{
     display:flex;
     justify-content: space-between;
 }
+
+.media-disp{
+    display:flex;
+    overflow:auto;
+    list-style: none;
+    padding: 0;
+}
+
+.media-card {
+    border: 2px solid darkgray;
+    padding:5px;
+    margin:5px;
+    width: 200px;
+    height:200px;
+}
+
+.card-name {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.card-creator{
+    font-size:15px;
+    font-weight: bold;
+}
+
+.card-year{
+    font-size: 15px;
+    color: gray;
+    font-style: italic;
+}
+
+.card-type{
+    font-size:15px;
+}
+
+.card-rating{
+    font-size:15px;
+}
