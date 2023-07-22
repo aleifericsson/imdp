@@ -1,0 +1,121 @@
+[
+    {
+        "name": "Sonic 06",
+        "creator": "Sonic Team",
+        "year": 2006,
+        "type": "Video Game",
+        "rating": 3
+    },
+    {
+        "name": "Sonic 1",
+        "creator": "Sonic Team",
+        "year": 1993,
+        "type": "Video Game",
+        "rating": 6
+    },
+    {
+        "name": "Sonic Unleashed",
+        "creator": "Sonic Team",
+        "year": 2008,
+        "type": "Video Game",
+        "rating": 7
+    },
+    {
+        "name": "Sonic Mania",
+        "creator": "Sonic Team",
+        "year": 2017,
+        "type": "Video Game",
+        "rating": 9
+    },
+    {
+        "name": "Sonic Robo Blast",
+        "creator": "Sonic Team Junior",
+        "year": 1998,
+        "type": "Video Game",
+        "rating": 9
+    },
+    {
+        "name": "Sonic Frontiers",
+        "creator": "Sonic Team",
+        "year": 2022,
+        "type": "Video Game",
+        "rating": 8
+    },
+    {
+        "name": "The Murder of Sonic the Hedgehog",
+        "creator": "Sonic Team",
+        "year": 2023,
+        "type": "Video Game",
+        "rating": 10
+    },
+    {
+        "name": "Sonic IDW",
+        "creator": "IDW Publishing",
+        "year": 2018,
+        "type": "Comic",
+        "rating": 8
+    },
+    {
+        "name": "Archie's Sonic",
+        "creator": "Archie's Comics",
+        "year": 1993,
+        "type": "Comic",
+        "rating": 9
+    },
+    {
+        "name": "Sonic Prime",
+        "creator": "Netflix",
+        "year": 2022,
+        "type": "TV Show",
+        "rating": 8
+    },
+    {
+        "name": "Sonic X",
+        "creator": "TMS Entertainment",
+        "year": 2003,
+        "type": "TV Show",
+        "rating": 5
+    },
+    {
+        "name": "Sonic Adventure",
+        "creator": "Sonic Team",
+        "year": 1998,
+        "type": "Video Game",
+        "rating": 7
+    },
+    {
+        "name": "Sonic Adventure 2",
+        "creator": "Sonic Team",
+        "year": 2001,
+        "type": "Video Game",
+        "rating": 8
+    },
+    {
+        "name": "Sonic Rush Album",
+        "creator": "Hideki Naganuma",
+        "year": 2005,
+        "type": "Album",
+        "rating": 10
+    },
+    {
+        "name": "Sonic Frontiers - Stillness in Motion",
+        "creator": "Sonic Team",
+        "year": 2022,
+        "type": "Album",
+        "rating": 9
+    },
+    {
+        "name": "Sonic The Hedgehog Movie",
+        "creator": "Paramount Pictures",
+        "year": 2020,
+        "type": "Movie",
+        "rating": 6
+    },
+    {
+        "name": "Sonic The Hedgehog Movie 2",
+        "creator": "Paramount Pictures",
+        "year": 2022,
+        "type": "Movie",
+        "rating": 6
+    }
+]

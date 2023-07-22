@@ -27,7 +27,7 @@ form > div{
 
 .media-disp{
     display:flex;
-    overflow:auto;
+    flex-wrap: wrap;
     list-style: none;
     padding: 0;
 }
@@ -37,6 +37,7 @@ form > div{
     padding:5px;
     margin:5px;
     width: 200px;
+    flex-shrink:0;
     height:200px;
 }
 

@@ -55,6 +55,29 @@ function toggleForm(){
     form.classList.toggle("offscreen");
 }
 
+
+function toggleSonic(){
+    if (sonic.classList.contains("SONIC")){
+        location.reload();
+        return false;
+    } else{
+        temp_sonic.forEach(med => addMedia(new Media(
+            med.name,
+            med.year,
+            med.creator,
+            med.type,
+            med.rating
+        )));
+        sonic.classList.add("SONIC");
+    }
+}
+
+const endpoint = './sonic.json';
+temp_sonic = [];
+fetch(endpoint)
+    .then(blob => blob.json())
+    .then(data => temp_sonic.push(...data));
+
 const form = document.querySelector("#new-media");
 const name_in = document.querySelector("#name");
 const year_in = document.querySelector("#year"); 
@@ -66,3 +89,5 @@ submit.addEventListener("click", createMedia);
 const new_media_btn = document.querySelector("#new-media-btn");
 new_media_btn.addEventListener("click", toggleForm);
 const media_disp = document.querySelector(".media-disp");
+const sonic = document.querySelector("#SONIC");
+sonic.addEventListener("click", toggleSonic);
