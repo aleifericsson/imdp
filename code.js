@@ -69,6 +69,12 @@ function toggleSonic(){
             med.rating
         )));
         sonic.classList.add("SONIC");
+        sonic.innerHTML="Disable Sonic Mode";
+        header.setAttribute('style','background:#6663FF;');
+        const thesonic = document.createElement("img");
+        thesonic.setAttribute("src","./images/Portrait_sonic_winking.png");
+        thesonic.style="height:auto; width:290px; left:5px; position:absolute; bottom:0px;";
+        sidebar.appendChild(thesonic);
     }
 }
 
@@ -91,3 +97,5 @@ new_media_btn.addEventListener("click", toggleForm);
 const media_disp = document.querySelector(".media-disp");
 const sonic = document.querySelector("#SONIC");
 sonic.addEventListener("click", toggleSonic);
+const header = document.querySelector(".header");
+const sidebar = document.querySelector(".sidebar");
