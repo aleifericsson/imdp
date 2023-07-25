@@ -65,11 +65,15 @@
                 <label for="video-game">Album</label>
             </div>
         </fieldset>
-        <div>
-        <label for="rating">Rating:</label>
+        <div id="rat-div">
+        <label for="rating" id="rating-label">Rating: ★★★&#x2BEA;☆</label>
         <input type="range" name="rating" id = "rating" min="0" max="10" value="7">
-    </div>
-    <button id = "submit" type="submit">Add Media</button>
+        </div>
+        <div class="form-buttons">
+        
+            <button id = "submit" type="submit">Add Media</button>
+            <button id = "cancel" type ="button">Cancel</button>
+        </div>
     </form>
 
     <script src="code.js"></script>
