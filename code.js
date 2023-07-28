@@ -8,6 +8,7 @@
 */
 
 let card_list = [];
+let rommills;
 
 function Media(name, year, creator, type, rating){
         this.name = name;
@@ -34,10 +35,20 @@ function addMedia(media){
         </div>
     `;
     new_li.classList.add("media-card");
+    new_li.classList.add("off");
     media_disp.appendChild(new_li);
     card_list.push(new_li);
     const remove = new_li.querySelector(".remove");
     remove.addEventListener("click",removeCard);
+    rommills = 0
+    holup(new_li, 0);
+}
+
+function holup(new_li, mills){
+    if (mills>rommills+3){
+        new_li.classList.remove("off");
+}
+    else{ setTimeout(holup(new_li,mills+1),100);}
 }
 
 function removeCard(e){
@@ -65,16 +76,21 @@ function generateStars(stars){
 
 function createMedia(e){
     e.preventDefault();
-    const type_in = document.querySelector('input[name="media"]:checked');  
-    const temp_media = new Media(
-        name_in.value,
-        year_in.value,
-        creator_in.value,
-        type_in.value,
-        rating_in.value
-    );
-    addMedia(temp_media);
-    toggleForm();
+    if (year_in.validity.valueMissing){
+
+    }
+    else{
+        const type_in = document.querySelector('input[name="media"]:checked');  
+        const temp_media = new Media(
+            name_in.value,
+            year_in.value,
+            creator_in.value,
+            type_in.value,
+            rating_in.value
+        );
+        addMedia(temp_media);
+        toggleForm();
+    }
 }
 
 function toggleForm(){
