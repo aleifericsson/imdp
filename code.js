@@ -8,7 +8,7 @@
 */
 
 let card_list = [];
-let rommills;
+let cllength = 0;
 
 function Media(name, year, creator, type, rating){
         this.name = name;
@@ -40,15 +40,16 @@ function addMedia(media){
     card_list.push(new_li);
     const remove = new_li.querySelector(".remove");
     remove.addEventListener("click",removeCard);
-    rommills = 0
-    holup(new_li, 0);
 }
 
-function holup(new_li, mills){
-    if (mills>rommills+3){
-        new_li.classList.remove("off");
-}
-    else{ setTimeout(holup(new_li,mills+1),100);}
+function update(){
+    if (card_list.length != cllength){
+        card_list.forEach(li =>{
+                li.classList.remove("off");
+        });
+        cllength = card_list.length;
+    }
+    
 }
 
 function removeCard(e){
@@ -152,3 +153,4 @@ sonic.addEventListener("click", toggleSonic);
 const header = document.querySelector(".header");
 const sidebar = document.querySelector(".sidebar");
 const rat_lab = document.querySelector("#rating-label");
+interval = setInterval(update,1000);
