@@ -49,7 +49,8 @@ function update(){
         });
         cllength = card_list.length;
     }
-    
+    const blueblur = document.querySelector(".out");
+    blueblur.classList.remove("out");
 }
 
 function removeCard(e){
@@ -61,14 +62,14 @@ function generateStars(stars){
     let star_string = "";
     for (let i=0;i<5;i++){
         if (stars===0){
-            star_string = star_string+"☆";
+            star_string = star_string+`<img class="star" src="images/empty_star.svg">`;
         }
         else if (stars===1){
-            star_string = star_string+"&#x2BEA;";
+            star_string = star_string+`<img class="star" src="images/half_star.svg">`;
             stars = stars-1;
         }
         else{
-            star_string = star_string+"★";
+            star_string = star_string+`<img class="star" src="images/full_star.svg">`;
             stars = stars-2;
         }
     }
@@ -115,11 +116,15 @@ function toggleSonic(){
         header.setAttribute('style','background:#6663FF;');
         const thesonic = document.createElement("img");
         thesonic.setAttribute("src","./images/Portrait_sonic_winking.png");
-        thesonic.style="height:auto; width:290px; margin-left: 5px;";
+        thesonic.classList.add("out");
+        thesonic.style="height:auto; width:240px; margin-left: 5px; margin-top: 50px;z-index:1993;transition:cubic-bezier(1, 0, 0, 1);transition-duration: 500ms;"; 
+        /*
         const sHADOW = document.createElement("img");
+        thesonic.classList.add("out");
         sHADOW.setAttribute("src","./images/shadow.png");
-        sHADOW.style="height:auto; width:290px; position:relative; top:500px;";
+        sHADOW.style="height:auto; width:240px; position:relative; top:415px;z-index:1992;transition:cubic-bezier(1, 0, 0, 1);transition-duration: 500ms;";
         sidebar.appendChild(sHADOW);
+        */
         sidebar.appendChild(thesonic);
     }
 }
